@@ -11,8 +11,6 @@ class DetailActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.content_detail)
-        //setSupportActionBar(detail_toolbar)
-
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         d_file_name.text = intent.getStringExtra(ExtraImageFile.NAME.name)
